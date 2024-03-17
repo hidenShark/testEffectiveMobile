@@ -12,7 +12,8 @@ class AppCoordinator: Coordinator {
     private let factory = SceneFactory.self
     
     override func start() {
-        showMainFlow()
+        showOnboardindFlow()
+//        showMainFlow()
     }
     
 }
@@ -20,6 +21,12 @@ class AppCoordinator: Coordinator {
 // MARK: - Navigation method
 
 private extension AppCoordinator {
+    
+    func showOnboardindFlow() {
+        guard let navigationController = navigationController else { return }
+        factory.makeOnboardingFlow(coordinator: self, navigationController: navigationController)
+    }
+    
     func showMainFlow() {
         guard let navigationController = navigationController else { return }
         let tabBarController = factory.makeMainFlow(coordinator: self)

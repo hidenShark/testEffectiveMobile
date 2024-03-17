@@ -9,6 +9,26 @@ import UIKit
 
 struct SceneFactory {
     
+    // MARK: - Onboarding flow
+    
+    static func makeOnboardingFlow(coordinator: AppCoordinator, navigationController: UINavigationController) {
+        let onboardingCoordinator = OnboardingCoordinator(navigationController: navigationController)
+        coordinator.addChildCoordinator(onboardingCoordinator)
+        onboardingCoordinator.start()
+    }
+    
+    static func makeOnboardingScene(coordinator: OnboardingCoordinator) -> OnboardingViewController {
+        let firstVC = OnboardingFirstViewController()
+        firstVC.imageToShow = UIImage(named: "messages")
+        firstVC.titleText = "Delicious Food"
+        firstVC.descriptionText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        firstVC.buttonText = "Next"
+        
+        let onboardingController = OnboardingViewController(pages: [firstVC])
+        return onboardingController
+    }
+
+    
     // MARK: - Main flow
     
     static func makeMainFlow(coordinator: AppCoordinator) -> TabBarController {

@@ -23,7 +23,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: tabBar.frame.size.width, height: 1))
+        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: tabBar.frame.size.width, height: 0.5))
         lineView.backgroundColor = AppColor.grey
         tabBar.addSubview(lineView)
 //        tabBar.layer.borderColor = UIColor.lightGray.cgColor

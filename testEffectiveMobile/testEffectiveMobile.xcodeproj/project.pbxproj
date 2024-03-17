@@ -22,6 +22,9 @@
 		80D05EA72BA4DE1400E91B67 /* MessagesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D05EA62BA4DE1400E91B67 /* MessagesCoordinator.swift */; };
 		80D05EA92BA4DE3500E91B67 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D05EA82BA4DE3500E91B67 /* ProfileCoordinator.swift */; };
 		80D05EAC2BA4E71F00E91B67 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D05EAB2BA4E71F00E91B67 /* AppColor.swift */; };
+		80D28C942BA5AF1E003458D9 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D28C932BA5AF1E003458D9 /* OnboardingCoordinator.swift */; };
+		80D28C972BA5B2E2003458D9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D28C962BA5B2E2003458D9 /* OnboardingViewController.swift */; };
+		80D28C992BA5B57D003458D9 /* OnboardingFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D28C982BA5B57D003458D9 /* OnboardingFirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		80D05EA62BA4DE1400E91B67 /* MessagesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCoordinator.swift; sourceTree = "<group>"; };
 		80D05EA82BA4DE3500E91B67 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		80D05EAB2BA4E71F00E91B67 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		80D28C932BA5AF1E003458D9 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		80D28C962BA5B2E2003458D9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		80D28C982BA5B57D003458D9 /* OnboardingFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 			children = (
 				80D05E942BA4BE5900E91B67 /* Coordinator.swift */,
 				80D05E972BA4D80B00E91B67 /* AppCoordinator.swift */,
+				80D28C932BA5AF1E003458D9 /* OnboardingCoordinator.swift */,
 				80D05EA02BA4DCE600E91B67 /* SearchCoordinator.swift */,
 				80D05EA22BA4DDA300E91B67 /* FavoritesCoordinator.swift */,
 				80D05EA42BA4DDEB00E91B67 /* ResponsesCoordinator.swift */,
@@ -105,6 +112,7 @@
 		80D05E992BA4DA4000E91B67 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				80D28C952BA5B2C0003458D9 /* Onboarding */,
 				80D05E9A2BA4DA4A00E91B67 /* SceneFactory */,
 			);
 			path = UILayer;
@@ -132,6 +140,15 @@
 				80D05EAB2BA4E71F00E91B67 /* AppColor.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		80D28C952BA5B2C0003458D9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				80D28C962BA5B2E2003458D9 /* OnboardingViewController.swift */,
+				80D28C982BA5B57D003458D9 /* OnboardingFirstViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +224,12 @@
 				80D05E952BA4BE5900E91B67 /* Coordinator.swift in Sources */,
 				80D05EA52BA4DDEB00E91B67 /* ResponsesCoordinator.swift in Sources */,
 				80D05E9C2BA4DA7E00E91B67 /* SceneFactory.swift in Sources */,
+				80D28C942BA5AF1E003458D9 /* OnboardingCoordinator.swift in Sources */,
 				80D05E852BA4B7C800E91B67 /* ViewController.swift in Sources */,
 				80D05EA92BA4DE3500E91B67 /* ProfileCoordinator.swift in Sources */,
 				80D05EAC2BA4E71F00E91B67 /* AppColor.swift in Sources */,
+				80D28C972BA5B2E2003458D9 /* OnboardingViewController.swift in Sources */,
+				80D28C992BA5B57D003458D9 /* OnboardingFirstViewController.swift in Sources */,
 				80D05E982BA4D80B00E91B67 /* AppCoordinator.swift in Sources */,
 				80D05EA12BA4DCE600E91B67 /* SearchCoordinator.swift in Sources */,
 				80D05E9F2BA4DB2300E91B67 /* TabBarController.swift in Sources */,
